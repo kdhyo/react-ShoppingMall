@@ -1,1 +1,6 @@
-"# react-ShoppingMall" 
+"# React를 활용한 쇼핑몰 프로젝트"
+## 기간
+  - 2020/06/03 ~
+
+## 작업 내용
+ - MONGOODB 연결
