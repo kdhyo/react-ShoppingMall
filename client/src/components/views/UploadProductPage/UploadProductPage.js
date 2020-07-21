@@ -35,7 +35,7 @@ function UploadProductPage(props) {
   };
 
   const continentChangeHandler = (event) => {
-    event.currentTarget.key;
+    setContinent(event.currentTarget.key);
   };
 
   const updateImages = (newImages) => {
