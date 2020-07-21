@@ -14,6 +14,10 @@ const ProductSchema = mongoose.Schema(
     description: {
       type: String,
     },
+    price: {
+      type: Number,
+      default: 0,
+    },
     images: {
       type: Array,
       default: [],
@@ -23,16 +27,13 @@ const ProductSchema = mongoose.Schema(
       maxlength: 100,
       default: 0,
     },
+    continents: {
+      type: Number,
+      default: 1,
+    },
     view: {
       type: Number,
       default: 0,
-    },
-    price: {
-      type: Number,
-      default: 0,
-    },
-    continent: {
-      type: String,
     },
   },
   { timestapms: true }
