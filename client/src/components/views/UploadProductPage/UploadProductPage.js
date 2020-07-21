@@ -35,7 +35,7 @@ function UploadProductPage(props) {
   };
 
   const continentChangeHandler = (event) => {
-    setContinent(event.currentTarget.key);
+    setContinent(event.currentTarget.value);
   };
 
   const updateImages = (newImages) => {
@@ -46,7 +46,7 @@ function UploadProductPage(props) {
     console.log("enmene");
     event.preventDefault();
     if (!Title || !Description || !Price || !Continent || !Images) {
-      return alert("모든 값을 넣어주셔야 합니다.");
+      return alert(`모든 값을 넣어주셔야 합니다.${Continent}`);
     }
 
     //서버에 채운 값들을 request로 보낸다.
@@ -94,7 +94,7 @@ function UploadProductPage(props) {
         <br />
         <select onChange={continentChangeHandler} value={Continent}>
           {Continents.map((item) => (
-            <option key={item.key} value={item.value}>
+            <option key={item.key} value={item.key}>
               {item.value}
             </option>
           ))}
