@@ -93,7 +93,7 @@ router.get("/products_by_id", (req, res) => {
     // id=123123123,3333333,444444444 이거를
     // productIds = ['123123123', '3333333', '444444444'] 이런 식으로 변경
     console.log(`기존 데이터: ${req.query.id}`);
-    let ids = req.query.id.splice(",");
+    let ids = req.query.id.split(",");
     console.log(`splice 사용: ${ids}`);
     productIds = ids.map((item) => {
       return item;
