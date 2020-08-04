@@ -65,20 +65,19 @@ export function getCartItems(cartItems, userCart) {
   const request = axios
     .get(`/api/product/products_by_id?id=${cartItems}&type=array`)
     .then((response) => {
-      //CartItem들에 해당하는 정보들을
-      //Product Coolection에서 가져온 후에
-      //Quantity 정보를 넣어준다.
-
+      // CartItem들에 해당하는 정보들을
+      // Product Collection에서 가져온후에
+      // Quantity 정보를 넣어 준다.
       userCart.forEach((cartItem) => {
-        response.data.product.forEach((productDetail, index) => {
+        response.data.forEach((productDetail, index) => {
           if (cartItem.id === productDetail._id) {
-            response.data.product[index].quantity = cartItem.quantity;
+            response.data[index].quantity = cartItem.quantity;
           }
         });
       });
-
       return response.data;
     });
+
   return {
     type: GET_CART_ITEMS,
     payload: request,

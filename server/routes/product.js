@@ -92,13 +92,10 @@ router.get("/products_by_id", (req, res) => {
   if (type === "array") {
     // id=123123123,3333333,444444444 이거를
     // productIds = ['123123123', '3333333', '444444444'] 이런 식으로 변경
-    console.log(`기존 데이터: ${req.query.id}`);
     let ids = req.query.id.split(",");
-    console.log(`splice 사용: ${ids}`);
     productIds = ids.map((item) => {
       return item;
     });
-    console.log(`map 사용: ${productIds}`);
   }
 
   //productId를 이용해서 DB에서 productId와 같은 상품의 정보를 가져온다.
@@ -106,7 +103,7 @@ router.get("/products_by_id", (req, res) => {
     .populate("writer")
     .exec((err, product) => {
       if (err) return res.status(400).send(err);
-      return res.status(200).json({ success: true, product });
+      return res.status(200).send(product);
     });
 });
 
