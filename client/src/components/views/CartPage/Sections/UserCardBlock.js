@@ -23,6 +23,7 @@ function UserCardBlock(props) {
         </td>
       </tr>
     ));
+
   return (
     <div>
       <table>
