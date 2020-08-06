@@ -123,7 +123,7 @@ function LandingPage() {
     <div style={{ width: "75%", margin: "3rem auto" }}>
       <div style={{ textAlign: "center" }}>
         <h2>
-          Let's Travel Anywhere <Icon type="rocket" />
+          <Icon type="smile" /> 동효 스토어 <Icon type="smile" />
         </h2>
       </div>
       {/* Filter */}

@@ -1,31 +1,31 @@
 const continents = [
   {
     _id: 1,
-    name: "Africa",
+    name: "상의",
   },
   {
     _id: 2,
-    name: "Europe",
+    name: "하의",
   },
   {
     _id: 3,
-    name: "Asia",
+    name: "신발",
   },
   {
     _id: 4,
-    name: "North America",
+    name: "속옷",
   },
   {
     _id: 5,
-    name: "South America",
+    name: "악세사리",
   },
   {
     _id: 6,
-    name: "Australia",
+    name: "모자",
   },
   {
     _id: 7,
-    name: "Antarctica",
+    name: "시계",
   },
 ];
 

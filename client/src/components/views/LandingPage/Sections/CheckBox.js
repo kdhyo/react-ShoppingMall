@@ -30,14 +30,14 @@ function CheckBox(props) {
           onChange={() => handleToggle(value._id)}
           checked={Checked.indexOf(value._id) === -1 ? false : true}
         />
-        <span>{value.name}</span>
+        <span>{value.name} </span>
       </React.Fragment>
     ));
 
   return (
     <div>
       <Collapse defaultActiveKey={["1"]}>
-        <Panel header="Continents">{renderCheckboxLists()}</Panel>
+        <Panel header="상품">{renderCheckboxLists()}</Panel>
       </Collapse>
     </div>
   );

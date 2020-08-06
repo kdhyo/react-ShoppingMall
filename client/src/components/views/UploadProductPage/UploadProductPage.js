@@ -6,13 +6,13 @@ import Axios from "axios";
 const { TextArea } = Input;
 
 const Continents = [
-  { key: 1, value: "Africa" },
-  { key: 2, value: "Europe" },
-  { key: 3, value: "Asia" },
-  { key: 4, value: "North America" },
-  { key: 5, value: "South America" },
-  { key: 6, value: "Australia" },
-  { key: 7, value: "Antarcica" },
+  { key: 1, value: "상의" },
+  { key: 2, value: "하의" },
+  { key: 3, value: "신발" },
+  { key: 4, value: "속옷" },
+  { key: 5, value: "악세사리" },
+  { key: 6, value: "모자" },
+  { key: 7, value: "시계" },
 ];
 
 function UploadProductPage(props) {
